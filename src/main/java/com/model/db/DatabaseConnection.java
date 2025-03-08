@@ -16,11 +16,7 @@ public class DatabaseConnection {
 	DataSource ds;
 
 	public void connectToDB() {
-		//Local
-		//String db_ip = "192.168.3.61";
-		//Remote
-		//String db_ip = "119.235.6.58";
-		//
+
 		String db_ip = "124.43.206.205";
 		
 		//System.out.println("db_ip = " + db_ip);
@@ -36,7 +32,7 @@ public class DatabaseConnection {
 		try {
 			// step2 create the connection object
 			// System.out.println("2");
-			con = DriverManager.getConnection("jdbc:oracle:thin:@" + db_ip + ":37438:HOSPITAL", "REPORTS", "REPORTS");
+			con = DriverManager.getConnection("jdbc:oracle:thin:@" + db_ip + ":PORT:SERVICE", "DB_USER", "DB_PASSWORD");
 
 			// step3 create the statement object
 			stmt = con.createStatement();
