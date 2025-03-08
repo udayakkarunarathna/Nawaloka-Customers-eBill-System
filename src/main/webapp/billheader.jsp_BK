@@ -1,0 +1,20 @@
+<%
+String title_h = "";
+if (request.getParameter("title_h") != null) {
+	title_h = request.getParameter("title_h");
+}
+String ACC_ID_h = "NAWALOKA HOSPITALS PLC";
+if (request.getParameter("ACC_ID_h") != null) {
+	ACC_ID_h = request.getParameter("ACC_ID_h");
+}
+%>
+<div class="text-center"
+	style="background-color: white; color: black; border-radius: 0.3rem !important; padding-top: 8pt; padding-bottom: 5pt; margin: 2pt 3pt 0pt 3pt; border: 1px solid black">
+	<div align="center">
+		<img src="images/logo.png" class="img-rounded" alt="Nawaloka"
+			height="40">&nbsp;&nbsp;<%=ACC_ID_h%>
+		<div align="center" style="margin-top: -7pt;">
+			<b><%=title_h%></b>
+		</div>
+	</div>
+</div>

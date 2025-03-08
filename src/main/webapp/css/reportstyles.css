@@ -1,0 +1,86 @@
+@charset "ISO-8859-1";
+
+.parent {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.image1 {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.image2 {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.boldCls {
+	font-weight: bold;
+}
+
+body {
+	background: rgb(204, 204, 204);
+	font-family: 'Courier New', monospace;
+	font-size: 62.5%;
+}
+
+.mainDiv {
+	font-size: 1.2em;
+}
+
+#content {
+	padding: 90mm 3mm;
+}
+
+page {
+	position: relative;
+	background: white;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 0.5cm;
+	box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+
+page[size="A4"] {
+	width: 21cm;
+	height: 29.7cm;
+}
+
+header, footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding-right: 5mm;
+	padding-left: 5mm;
+}
+
+header {
+	top: 0;
+	padding-top: 50mm;
+	padding-bottom: 0mm;
+}
+
+footer {
+	bottom: 0;
+	color: #000;
+	padding-top: 3mm;
+	padding-bottom: 0mm;
+}
+
+@media print {
+	body, page {
+		margin: 0;
+		box-shadow: 0;
+	}
+	header, footer {
+		position: fixed;
+		left: 0;
+		right: 0;
+		padding-right: 5mm;
+		padding-left: 5mm;
+	}
+}
