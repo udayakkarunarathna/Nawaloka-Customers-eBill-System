@@ -16,7 +16,7 @@ public class DatabaseConnection {
 	DataSource ds;
 
 	public void connectToDB() {
-
+		// DB host
 		String db_ip = "124.43.206.205";
 		
 		//System.out.println("db_ip = " + db_ip);
